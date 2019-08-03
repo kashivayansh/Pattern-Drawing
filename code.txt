@@ -1,0 +1,23 @@
+import turtle as t
+a=t.Turtle()
+a.color("red")
+a.speed(-5)
+def draw_square():
+    for side in range(4):
+        a.forward(100)
+        a.right(90)
+        for side in range(4):
+            a.forward(50)
+            a.right(90)
+            
+a.penup()
+a.back(20)
+a.pendown()
+
+for square in range(80):
+    draw_square()
+    a.forward(5)
+    a.left(5)
+    
+a.hideturtle()
+t.exitonclick()
